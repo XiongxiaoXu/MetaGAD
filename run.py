@@ -58,7 +58,6 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 print('Dataset: ',args.dataset)
-print('seed =',args.seed)
 
 # Load and preprocess data
 adj, feature, label, embedding = load_data(args)
@@ -109,12 +108,12 @@ for t in range(args.num_run):
         if loss_val < best_loss:
             best_loss = loss_val
             best_training_epoch = epoch
-            torch.save(base_model.state_dict(), 'saved_model/best_base_model_' + args.dataset + '_'+ 'seed_'+ str(args.seed) + '.pkl')
-            torch.save(meta_model.state_dict(), 'saved_model/best_meta_model_' + args.dataset + '_'+ 'seed_'+ str(args.seed) + '.pkl')
+            torch.save(base_model.state_dict(), 'saved_model/best_base_model_' + args.dataset + '.pkl')
+            torch.save(meta_model.state_dict(), 'saved_model/best_meta_model_' + args.dataset + '.pkl')
 
     print('traning finished, loading %dth epoch, '%(best_training_epoch), end='')
-    base_model.load_state_dict(torch.load('saved_model/best_base_model_' + args.dataset + '_' + 'seed_'+ str(args.seed) + '.pkl'))
-    meta_model.load_state_dict(torch.load('saved_model/best_meta_model_' + args.dataset + '_' + 'seed_'+ str(args.seed) + '.pkl'))
+    base_model.load_state_dict(torch.load('saved_model/best_base_model_' + args.dataset + '.pkl'))
+    meta_model.load_state_dict(torch.load('saved_model/best_meta_model_' + args.dataset + '.pkl'))
 
     base_model.eval()
     meta_model.eval()
