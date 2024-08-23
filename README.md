@@ -5,7 +5,7 @@ This is an offical implementation of MetaGAD: "[MetaGAD: Meta Representation Ada
 <p align="center">
   <img width="525" alt="image" src="https://github.com/user-attachments/assets/5c6cc949-b4df-429c-a97c-866c88bf4ec9">
 </p>
-<!-- ![image](https://github.com/user-attachments/assets/5c6cc949-b4df-429c-a97c-866c88bf4ec9) -->
+![image](https://github.com/user-attachments/assets/5c6cc949-b4df-429c-a97c-866c88bf4ec9)
 
 
 ## Contributions
