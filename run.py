@@ -1,16 +1,3 @@
-# CUDA_VISIBLE_DEVICES=0 python run.py --method meta-transfer --embedding dominant --classifier mlp --loss crossentropy 
-# --num_run 3 --dataset injected_cora --detector_lr 5e-4 --adaptor_lr 5e-4 --pos_weight 0.5 --num_epoch 5500
-# CUDA_VISIBLE_DEVICES=1 python run.py --method meta-transfer --embedding dominant --classifier mlp --loss crossentropy 
-# --num_run 3 --dataset injected_citeseer --detector_lr 5e-4 --adaptor_lr 5e-3 --pos_weight 1 --num_epoch 6500
-# CUDA_VISIBLE_DEVICES=1 python run.py --method meta-transfer --embedding dominant --classifier mlp --loss crossentropy 
-# --num_run 3 --dataset injected_amazon_photo --detector_lr 1e-4 --adaptor_lr 1e-2 --pos_weight 5 --num_epoch 3500
-# CUDA_VISIBLE_DEVICES=1 python run.py --method meta-transfer --embedding dominant --classifier mlp --loss crossentropy 
-#  --num_run 3 --dataset wiki --detector_lr 5e-4 --adaptor_lr 5e-4 --pos_weight 0.1 --num_epoch 8000
-# CUDA_VISIBLE_DEVICES=1 python run.py --method meta-transfer --embedding dominant --classifier mlp --loss crossentropy 
-# --num_run 3 --dataset amazon_review --detector_lr 5e-4 --adaptor_lr 5e-4 --pos_weight 1 --num_epoch 6000
-# CUDA_VISIBLE_DEVICES=2 python run.py --method meta-transfer --embedding dominant --classifier mlp --loss crossentropy 
-# --num_run 3 --dataset yelpchi --detector_lr 5e-4 --adaptor_lr 5e-4 --pos_weight 0.6 --num_epoch 15000
-
 import numpy as np
 import scipy.sparse as sp
 import torch
