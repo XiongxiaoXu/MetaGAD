@@ -47,10 +47,12 @@ Yelpchi dataset:
 If you find this repository useful for your work, please consider citing the paper as follows:
 
 ```bibtex
-@article{xu2023metagad,
-  title={MetaGAD: Learning to Meta Transfer for Few-shot Graph Anomaly Detection},
+@inproceedings{xu2024metagad,
+  title={MetaGAD: Meta Representation Adaptation for Few-Shot Graph Anomaly Detection},
   author={Xu, Xiongxiao and Ding, Kaize and Chen, Canyu and Shu, Kai},
-  journal={arXiv preprint arXiv:2305.10668},
-  year={2023}
+  booktitle={2024 IEEE 11th International Conference on Data Science and Advanced Analytics (DSAA)},
+  pages={1--10},
+  year={2024},
+  organization={IEEE}
 }
 ```
